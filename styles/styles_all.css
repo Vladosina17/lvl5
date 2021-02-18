@@ -1,0 +1,27 @@
+:root {
+	--color-subtitle: #08163A;
+	--color-p: #5E677F;
+	--color-button-background: #3858FF;
+	--color-mini-title: #29283E;
+	--color-mini-title-white: #F6F6F8;
+}
+
+body {
+	font-family: "Roboto";
+	padding: 0px;
+	margin: 0px;
+	width: 100vw;
+	height: 100vh;
+	border-width: 0px;
+
+	overflow: -moz-scrollbars-none;
+	overflow-y: scroll;
+	-ms-overflow-style: none;
+
+	color-adjust: exact;
+	-webkit-print-color-adjust: exact;
+}
+
+body::-webkit-scrollbar {
+	width: 0;
+}

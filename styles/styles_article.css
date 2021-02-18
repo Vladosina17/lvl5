@@ -1,0 +1,310 @@
+body {
+	background: #F5F5F6;
+}
+
+header {
+	position: sticky;
+	top: 0px;
+	min-height: 80px;
+	background: #FCFCFC;
+	box-shadow: 0px 0px 10px #D1D1DA;
+	display: flex;
+	align-items: center;
+	z-index: 1000;
+}
+
+nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-right: 80px;
+	margin-left: 80px; 
+	flex-grow: 1; 
+}
+
+h1 {
+	padding: 0;
+	margin: 0;
+
+	font-style: normal;
+	font-weight: 900;
+	font-size: 3.5em;
+	line-height: 56px;
+	text-align: center;
+	color: #F6F6F8;
+}
+
+h2 {
+	font-style: normal;
+	font-weight: bold;
+	font-size: 24px;
+	line-height: 32px;
+	text-align: center;
+	color: #29283E;
+	margin-bottom: 24px;
+}
+
+article {
+	font-style: normal;
+	font-weight: normal;
+	font-size: 18px;
+	line-height: 32px;
+	color: #29283E;
+	text-indent: 1.5em;
+	opacity: 0.65;
+	margin-bottom: 24px;
+}
+
+.menu_box {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.menu li a{
+	font-style: normal;
+	font-weight: 900;
+	font-size: 0.75em;
+	line-height: 12px;
+	letter-spacing: 0.08em;
+	
+}
+
+.menu li {
+	display: inline-flex;
+	margin-left: 32px;
+	margin-right: 32px;
+}
+
+a {
+	text-decoration: none;
+	color: #A8ADBA;
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+
+label {    
+    display: none;
+    font-style: normal;
+	font-weight: 900;
+	font-size: 0.75em;
+	line-height: 12px;
+	letter-spacing: 0.08em;
+	color: #A8ADBA;
+}
+
+.home_button {
+	display: block;
+	background: var(--color-button-background);
+	background-image: url(../images/main/backbutton.svg);
+	background-repeat: no-repeat;
+  	background-position: center center;
+	border-radius: 4px;
+	width: 24px;
+	height: 24px;
+	margin-right: 80px;
+}
+
+.signin_button {
+	font-style: normal;
+	font-weight: 900;
+	font-size: 0.75em;
+	line-height: 12px;
+	letter-spacing: 0.08em;
+	color: #A8ADBA;
+}
+
+ .active {
+	text-decoration: underline;
+	text-decoration-color: #3858FF;
+	text-decoration-thickness: 2px;
+	text-underline-offset: 4px;
+	color: var(--color-subtitle);
+}
+
+.top_box {
+	width: 100%;
+	height: 296px;
+	display: flex;
+	justify-content: center;
+	background-color: #FFCC55;
+	
+	border-radius: 2px;
+	background: linear-gradient(0deg, #19171A 0%, rgba(25, 23, 26, 0) 100%), url(../images/article/background.png);
+}
+
+.content{
+	display: flex;
+	flex-direction: column; 
+	width: 100%;
+	margin: 18px 80px;
+}
+
+.back_button {
+	width: 100%;
+}
+
+.back_button a {
+	display: inline-flex;
+	font-style: normal;
+	font-weight: 900;
+	font-size: 11px;
+	line-height: 14px;
+	letter-spacing: 0.03em;
+	color: #FCFCFC;
+}
+
+.back_button a img {
+	margin-right: 4px;
+}
+
+.preview {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	align-items: center; 
+	margin-top: 91px;
+}
+
+.status {
+	display: flex;
+	align-items: center;
+	margin-top: 13px;
+}
+
+.lvl {
+	display: flex;
+	margin-right: 42px;
+}
+
+.lvl p {
+	padding: 0;
+	margin: 0;
+}
+
+.rating {
+	display: flex;
+}
+
+
+.rating img {
+	margin-right: 4.7px;
+}
+
+.not_active_star {
+	opacity: 0.5;
+}
+
+.read {
+	font-style: normal;
+	font-weight: 900;
+	font-size: 0.6875em;
+	line-height: 14px;
+	letter-spacing: 0.03em;
+	color: var(--color-mini-title-white);
+}
+
+.stage {
+	font-style: normal;
+	font-weight: 400;
+	font-size: 0.6875em;
+	line-height: 14px;
+	letter-spacing: 0.02em;
+	color: var(--color-mini-title-white);
+	opacity: 0.65;
+}
+
+.article {
+	width: 43%;
+	padding: 40px 32px;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	width: 50%;
+	margin-right: auto;
+	margin-left: auto;
+	margin-bottom: 80px;
+
+	background: #FFFFFF;
+	border: 1px solid #E4E3E9;
+	box-sizing: border-box;
+	border-radius: 2px;
+
+}
+
+.citation {
+	padding: 0;
+	margin: 0;
+	font-style: italic;
+	font-weight: normal;
+	font-size: 18px;
+	line-height: 32px;
+	text-align: center;
+	color: #29283E;
+	width: 40%;
+}
+
+@media (max-width: 1200px) {
+	.article {
+		width: 60%;
+	}
+
+	.citation {
+		width: 60%;
+	}
+}
+
+@media (max-width: 900px) {
+
+	label{
+         display: inline-flex;
+    }
+
+    .home_button {
+		margin-right: 20px;
+	}
+
+    .menu {
+        display: none;
+    }
+
+    h1 {
+    	font-size: 3em;
+    }
+}
+
+@media (max-width: 750px) {
+	h1 {
+    	font-size: 2.5em;
+    }
+
+    .article {
+		width: 70%;
+	}
+
+	.citation {
+		width: 70%;
+	}
+}
+
+@media (max-width: 650px) {
+	h1 {
+    	font-size: 2em;
+    }
+}
+
+@media (max-width: 550px) {
+	h1 {
+    	font-size: 1.5em;
+    }
+
+    .article {
+		width: 80%;
+	}
+
+	.citation {
+		width: 80%;
+	}
+}
